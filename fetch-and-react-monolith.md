@@ -1,3 +1,1 @@
 this is all of the code for the show page
-
-something else
