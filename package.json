@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace run-from-server-client build",
+    "dev": "yarn workspace fetch-and-react-express-async-await-server dev",
+    "dev:debug": "yarn workspace fetch-and-react-express-async-await-server dev:debug",
+    "dev:server:debug": "PORT=4000 yarn workspace fetch-and-react-express-async-await-server dev:debug",
+    "dev:server": "PORT=4000 yarn workspace fetch-and-react-express-async-await-server dev",
+    "dev:client": "yarn workspace fetch-and-react-express-async-await-client dev",
+    "heroku-postbuild": "yarn workspace fetch-and-react-express-async-await-client build",
+    "start": "yarn workspace fetch-and-react-express-async-await-server start"
+  },
+  "engines": {
+    "node": "^14.15"
+  }
+}
